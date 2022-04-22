@@ -4,8 +4,6 @@ import sys
 import z3
 from twice import test 
 
-
-
 def get_code(function_code, lineno):
 	source_lines, starting_line_no = inspect.getsourcelines(function_code)
 	return source_lines[lineno - starting_line_no].rstrip()
